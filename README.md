@@ -1,29 +1,27 @@
 # diretcadmin-chinese-lang
 
-## 安装方式
+## install
 ```bash
 
-#### Install Git / 安装 GIT
+#### Install Git 
 yum install -y git
 
-#### clean old lang files / 删除旧的文件
+#### clean old lang files 
 rm -rf /usr/local/directadmin/data/skins/evolution/lang/zh_Han*
 rm -rf /usr/local/directadmin/data/skins/evolution/lang/login-zh_Han*
-rm -rf /usr/local/directadmin/data/skins/evolution/lang/zh_Han*
 
 
-#### Clone lang package / 克隆我们的语言包
+#### Clone lang package 
 cd /opt
 [ -d "/opt/kcloudxda" ] && rm -rf /opt/kcloudxda
 git clone https://github.com/kcloudx/diretcadmin-chinese-lang kcloudxda
 
 
-##### Evolution / 风格中文语言包
-cp -Rp /opt/kcloudxda/evolution/lang/zh_Han* /usr/local/directadmin/data/skins/evolution/lang/
-cp -Rp /opt/kcloudxda/evolution/lang/login-zh_Han* /usr/local/directadmin/data/skins/evolution/lang/
-cp -Rp /opt/kcloudxda/evolution/lang/zh_Han* /usr/local/directadmin/data/skins/evolution/lang/
+##### Evolution 
+\cp -Rp /opt/kcloudxda/evolution/lang/zh_Han* /usr/local/directadmin/data/skins/evolution/lang/
+\cp -Rp /opt/kcloudxda/evolution/lang/login-zh_Han* /usr/local/directadmin/data/skins/evolution/lang/
 
-#### Modify permission / 修改文件权限
+#### Modify permission 
 chown diradmin:diradmin -R /usr/local/directadmin/data/skins/evolution/
 
 ```
